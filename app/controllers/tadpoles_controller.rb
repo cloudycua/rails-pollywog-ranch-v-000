@@ -6,7 +6,7 @@ class TadpolesController < ApplicationController
 
     if frog.save
       @tadpole.destroy
-      redirect_to frog_path(frog), notice: "#{frog.name} the Tadpole successfully became a frog."
+      redirect_to frog, notice: "#{frog.name} the Tadpole successfully became a frog."
     else
       render :show
     end
